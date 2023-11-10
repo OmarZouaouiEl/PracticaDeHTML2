@@ -2,8 +2,6 @@ const numeroSecreto = "54321";
 const maxIntentos = 5;
 let intentos = 0;
 
-// ... (código existente)
-
 function comprobarNumero() {
   const userInput = document.getElementById("userInput").value;
   intentos++;
@@ -23,14 +21,11 @@ function comprobarNumero() {
   }
 }
 
-
 function solicitarNuevoIntento() {
   const userInput = document.getElementById("userInput");
   userInput.value = "";
   userInput.focus();
 }
-
-// ... (código existente)
 
 function compararNumeros(numSecreto, numUsuario) {
   if (numSecreto === numUsuario) {
@@ -49,16 +44,13 @@ function mostrarResultado(resultado, acierto) {
   const info = document.getElementById("info");
   info.innerHTML = resultado;
 
-  // Agregar o quitar la clase 'acierto-box' según si es un acierto
   const inputBox = document.querySelector(".input-box");
   inputBox.classList.toggle("acierto-box", !acierto);
 
-  // Limpiar la entrada y enfocarla solo si no es un acierto
   if (!acierto) {
     solicitarNuevoIntento();
   }
 }
-
 
 function mostrarCodigo(codigo) {
   const codeCells = document.querySelectorAll(".code-cell");

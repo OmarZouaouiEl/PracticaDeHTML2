@@ -1,31 +1,27 @@
 body {
     text-align: center;
 }
-
 h1 {
     font-size: 50px;
     margin-top: 20px;
-    color: #0066cc; /* Azul fuerte */
+    color: #0066cc; 
 }
-
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px;
 }
-
 .code {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     width: 1000px;
 }
-
 .code-cell {
     width: 90px;
     height: 90px;
-    background-color: #0066cc; /* Azul fuerte */
+    background-color: #0066cc; 
     border: 1px solid gray;
     font-size: 24px;
     text-align: center;
@@ -34,63 +30,79 @@ h1 {
     display: inline-block;
     color: white;
 }
-
 .input-section {
     margin: 20px;
 }
-
 .input-box {
-    border: 2px solid #008080; /* Color azul cian */
-    width: 300px; /* Ajusta el ancho según tus necesidades */
+    border: 2px solid #008080; 
+    width: 600px; 
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
     margin-bottom: 20px;
 }
-
 input {
-    flex: 1; /* Hace que el input ocupe todo el espacio disponible en la caja */
-    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+    flex: 1; 
+    padding: 10px; 
     font-size: 16px;
-    border: none; /* Elimina el borde del input para que no se vea duplicado */
-    outline: none; /* Elimina el contorno predeterminado del input al hacer clic */
-    margin-bottom: 10px; /* Espaciado inferior entre el input y la línea */
+    border: none; 
+    outline: none; 
+    margin-bottom: 10px;
 }
-
 button {
-    padding: 10px 20px; /* Ajusta el padding del botón según tus necesidades */
+    padding: 10px 20px; 
     font-size: 16px;
-    background-color: #008080; /* Color azul cian */
+    background-color: #008080; 
     color: white;
     border: none;
     cursor: pointer;
 }
-
 hr {
-    border: 1px solid #008080; /* Línea del mismo color que el borde */
-    margin: 20px 0; /* Mayor espacio arriba y abajo */
-    width: 80%; /* Ancho de la línea */
+    border: 1px solid #008080; 
+    margin: 20px 0; 
+    width: 80%; 
 }
-
 #info {
     font-size: 18px;
     margin: 20px;
 }
-
 .attempts {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .attempt-box {
     border: 2px solid red;
-    padding: 20px; /* Mayor espacio alrededor */
-    margin-top: 20px; /* Mayor espacio arriba */
+    padding: 20px; 
+    margin-top: 20px; 
 }
-
 .attempt-message {
     color: red;
     font-weight: bold;
+}
+.attempts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative; 
+}
+.attempts-line {
+    border: 1px solid #008080; 
+    margin: 20px 0; 
+    width: 80%; 
+    position: absolute; 
+    bottom: 0; 
+}
+.attempt-box {
+    border: 2px solid red;
+    background-color: #ff6666; 
+    padding: 20px; 
+    margin-top: 20px; 
+    width: 30%;
+    box-sizing: border-box; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; 
 }
