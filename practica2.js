@@ -1,3 +1,4 @@
+console.log(NUMERO_SECRETO= 54321)
 const numeroSecreto = "54321";
 const maxIntentos = 5;
 let intentos = 0;
