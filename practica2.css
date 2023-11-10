@@ -1,0 +1,96 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: #0066cc; /* Azul fuerte */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.code {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 1000px;
+}
+
+.code-cell {
+    width: 90px;
+    height: 90px;
+    background-color: #0066cc; /* Azul fuerte */
+    border: 1px solid gray;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    margin: 0 5px;
+    display: inline-block;
+    color: white;
+}
+
+.input-section {
+    margin: 20px;
+}
+
+.input-box {
+    border: 2px solid #008080; /* Color azul cian */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1; /* Hace que el input ocupe todo el espacio disponible en la caja */
+    padding: 10px; /* Ajusta el espaciado interno según tus necesidades */
+    font-size: 16px;
+    border: none; /* Elimina el borde del input para que no se vea duplicado */
+    outline: none; /* Elimina el contorno predeterminado del input al hacer clic */
+    margin-bottom: 10px; /* Espaciado inferior entre el input y la línea */
+}
+
+button {
+    padding: 10px 20px; /* Ajusta el padding del botón según tus necesidades */
+    font-size: 16px;
+    background-color: #008080; /* Color azul cian */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #008080; /* Línea del mismo color que el borde */
+    margin: 20px 0; /* Mayor espacio arriba y abajo */
+    width: 80%; /* Ancho de la línea */
+}
+
+#info {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.attempts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attempt-box {
+    border: 2px solid red;
+    padding: 20px; /* Mayor espacio alrededor */
+    margin-top: 20px; /* Mayor espacio arriba */
+}
+
+.attempt-message {
+    color: red;
+    font-weight: bold;
+}
